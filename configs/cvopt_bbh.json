@@ -1,0 +1,69 @@
+{
+  "selected": {
+    "rank": 100,
+    "lam": 0.01,
+    "lr": 0.01,
+    "n_epochs": 5,
+    "prewarm_lr": 0.01,
+    "prewarm_lam": 0.01,
+    "prewarm_epochs": 50,
+    "mean_r": 0.6714958310127258,
+    "se_r": 0.0014039381388679896
+  },
+  "best_unconstrained": {
+    "rank": 100,
+    "lam": 0.01,
+    "lr": 0.01,
+    "n_epochs": 5,
+    "prewarm_lr": 0.01,
+    "prewarm_lam": 0.01,
+    "prewarm_epochs": 50,
+    "mean_r": 0.6714958310127258,
+    "se_r": 0.0014039381388679896
+  },
+  "rule": "1-SE on Pearson r (max), tiebreak: rank asc, n_epochs asc, prewarm_epochs asc, lam desc, prewarm_lam desc, lr asc, prewarm_lr asc",
+  "n_folds": 5,
+  "holdout_frac": 0.2,
+  "n_init_cells_per_arm": 64,
+  "grid": {
+    "rank": [
+      5,
+      10,
+      25,
+      50,
+      100,
+      200
+    ],
+    "lam": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "lr": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "n_epochs": [
+      5,
+      20,
+      50
+    ],
+    "prewarm_lr": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "prewarm_lam": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "prewarm_epochs": [
+      5,
+      10,
+      25,
+      50
+    ]
+  }
+}
